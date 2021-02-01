@@ -1,0 +1,47 @@
+{
+    "animaux": [
+        {
+            "id": 1,
+            "nom" : "Oslo",
+            "race": "Berger Allemand",
+            "age": "2 ans",
+            "description": "Jeune chiot adorable"
+        },
+        {
+            "id": 2,
+            "nom" : "Marie",
+            "race": "Maine Coon",
+            "age": "6 ans",
+            "description": "Magnifique chat"
+        },
+        {
+            "id": 3,
+            "nom" : "Diamant",
+            "race": "Frison",
+            "age": "2 ans",
+            "description": "Pouliche"
+        },
+        {
+            "id": 4,
+            "nom" : "Ikem",
+            "race": "Colley",
+            "age": "7 ans",
+            "description": "Attend un gentil maître"
+        },
+        {
+            "id": 5,
+            "nom" : "Pepsi",
+            "race": "Angora",
+            "age": "3 mois",
+            "description": "Chaton abondonné"
+        },
+        {
+            "id": 6,
+            "nom" : "Kiko",
+            "race": "Shiba Inu",
+            "age": "2 ans",
+            "description": "Très joueur"
+        }
+
+    ]
+}
