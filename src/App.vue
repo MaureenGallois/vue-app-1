@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <AnimalPage/>
   </div>
 </template>
+
+<script>
+import AnimalPage from "./views/AnimalPage"
+
+export default {
+ name: "App",
+ components: { AnimalPage }
+}
+</script>
 
 <style>
 #app {

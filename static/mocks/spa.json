@@ -5,41 +5,47 @@
             "nom" : "Oslo",
             "race": "Berger Allemand",
             "age": "2 ans",
+            "photo": "https://images.dog.ceo/breeds/germanshepherd/n02106662_16129.jpg",
             "description": "Jeune chiot adorable"
         },
         {
             "id": 2,
             "nom" : "Marie",
-            "race": "Maine Coon",
+            "race": "Cocker",
             "age": "6 ans",
-            "description": "Magnifique chat"
+            "photo": "https://images.dog.ceo/breeds/setter-gordon/n02101006_18.jpg",
+            "description": "Magnifique cocker noir"
         },
         {
             "id": 3,
             "nom" : "Diamant",
-            "race": "Frison",
+            "race": "Bichon",
             "age": "2 ans",
-            "description": "Pouliche"
+            "photo": "https://images.dog.ceo/breeds/cotondetulear/100_2013.jpg",
+            "description": "Petit bichon"
         },
         {
             "id": 4,
             "nom" : "Ikem",
             "race": "Colley",
             "age": "7 ans",
+            "photo": "https://images.dog.ceo/breeds/sheepdog-shetland/n02105855_16948.jpg",
             "description": "Attend un gentil maître"
         },
         {
             "id": 5,
             "nom" : "Pepsi",
-            "race": "Angora",
+            "race": "Beagle",
             "age": "3 mois",
-            "description": "Chaton abondonné"
+            "photo": "https://images.dog.ceo/breeds/beagle/n02088364_10585.jpg",
+            "description": "Chiot abondonné"
         },
         {
             "id": 6,
             "nom" : "Kiko",
-            "race": "Shiba Inu",
+            "race": "Husky",
             "age": "2 ans",
+            "photo": "https://images.dog.ceo/breeds/eskimo/n02109961_9348.jpg",
             "description": "Très joueur"
         }
 
