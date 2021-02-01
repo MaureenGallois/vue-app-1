@@ -1,11 +1,11 @@
 <template>
   <div>
       <div class="search_animal">
-        <input type="text" v-model="search" placeholder="Rechercher..."/>
+        <input type="text" v-model="search_animal" placeholder="Rechercher..."/>
             <label>Rechercher un animal:</label>
       </div>
       <div class="list_animal">
-        <v-list class="box_animal" v-for="animal in search_animal" :key="animal.id">
+        <v-list class="box_animal" v-for="animal in animaux" :key="animal.id">
           <div class="icone_animal">
             <img style="width:50px;" :src="animal.photo">
           </div>
@@ -24,6 +24,7 @@
 </template>
 <script>
 import { FETCH_ANIMAL } from '../../store/modules/action-type'
+import { mapState, mapActions } from 'vuex'
 
 import Vue from "vue";
 import VueResource from "vue-resource";
@@ -32,23 +33,33 @@ Vue.use(VueResource);
 export default {
   data() {
     return {
-      animaux: []
+      animaux: [],
+      search_animal: ""
     };
   },
   http: {
     root: "http://localhost:3000"
   },
+  computed: {
+    ...mapState('app', [
+      'animal',
+    ]),
+  },
   methods: {
+    ...mapActions('app', [
+        FETCH_ANIMAL,
+    ]),
     selectAnimal (animal){
       this.$emit('selected', animal)
     }
   },
   watch: {
-        search_animal(value) {
-         this[FETCH_ANIMAL]({
-                  search: value,
-              });
-        },
+      search_animal(value) {
+        console.log('value', value);
+        this[FETCH_ANIMAL]({
+            search: value,
+        });
+      },
     },
   mounted() {
     this.$resource("animaux")

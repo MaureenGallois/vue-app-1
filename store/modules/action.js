@@ -18,7 +18,7 @@ export default {
             let url = 'http://localhost:3000/animaux';
 
             if (params && params.search) {
-                url += `?search=${params.search}`;
+                url += `?nom=${params.search}`;
             }
 
             rootState.axios_api.get(url)

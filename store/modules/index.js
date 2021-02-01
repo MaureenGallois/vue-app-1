@@ -3,7 +3,7 @@ import { mutation } from './mutation';
 
 const state = {
     animaux: [],
-    animal: {},
+    animal: null,
 
 };
 
